@@ -1,0 +1,23 @@
+create database hotelmanagementsystem;
+
+use hotelmanagementsystem;
+
+create table login(username varchar(30), password varchar(30));
+
+select * from login;
+
+insert into login values('admin', '12345');
+
+create table room(roomnumber varchar(30), availability varchar(30), cleaning_status varchar(30), price varchar(30), bed_type varchar(30));
+
+create table employee(name varchar(30), age varchar(30), gender varchar(30), job varchar(30), salary varchar(30), phone varchar(30), email varchar(30));
+
+create table department(department varchar(30), budget varchar(30));
+
+insert into department values('Front Office', '500000');  
+insert into department values('Housekeeping', '40000');  
+insert into department values('Food and Beverage', '23000');  
+insert into department values('Kitchen or Food Production', '540000');  
+insert into department values('Security', '320000');  
+
+create table customer(doucment varchar(30), number varchar(30), name varchar(30), gender varchar(30), country varchar(30), room varchar(30), checkintime varchar(30), deposit varchar(30));
